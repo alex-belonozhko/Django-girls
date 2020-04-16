@@ -13,7 +13,7 @@ class Post(models.Model):
     class Meta:
         verbose_name = "Пост"
         verbose_name_plural = "Посты"
-        ordering = ['-published_date']
+        ordering = ['published_date']
 
     def publish(self):
         self.published_date = timezone.now()
