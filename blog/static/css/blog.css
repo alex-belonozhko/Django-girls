@@ -1,8 +1,9 @@
-
 .page-header {
+	display: flex;
     background-color: #ff9400;
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 20px 20px 20px 40px;
+	justify-content: flex-start;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -20,17 +21,23 @@ h1, h2, h3, h4 {
 }
 
 .date {
+	display: flex;
+	justify-content: space-between;
     color: #828282;
     font-style: italic;
     font-size: 13px;
     font-weight: bold;
 }
 
-/*.save {
+.save {
     float: right;
-}*/
+}
 
-/*.post-form textarea, .post-form input {
+.indent_right {
+	margin-right: 20px;
+}
+
+.post-form textarea, .post-form input {
     width: 100%;
 }
 
@@ -38,13 +45,37 @@ h1, h2, h3, h4 {
     color: #ffffff;
     float: right;
     font-size: 26pt;
-    margin-right: 20px;
-}*/
+}
 
 .post {
     margin-bottom: 70px;
 }
 
-.post h3 a, .post h3 a:visited {
+.post h3 a, .post h3 a:visited , .post h1 a {
     color: #000000;
+}
+
+.Add_new_post {
+	margin-left: 18px;
+	color: green;
+	word-spacing: -8px;
+}
+
+.page-header .On_main {
+	align-self: flex-end;
+	margin-left: 60px;
+}
+
+.header_button {
+	margin-left: auto;
+	margin-right: 30px;
+	align-self: center;
+}
+
+.comment {
+    margin: 20px 0px 20px 20px;
+}
+
+.hello_user{
+	font-size: 20px;
 }
